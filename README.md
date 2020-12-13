@@ -1,22 +1,21 @@
 # SE-day7
 
-## goals
-### Manager
+## Manager
 1. Room manage
 2. Create report
 
-### Seller
+## Seller
 1. Book a room online
 2. Cancel a booking online
 
-### Reception
+## Reception
 1. Book a room offline
 2. Cancel a booking offline
 3. Checkin
 4. Checkout
 5. Pay
 
-### Client
+## Client
 1. Book a room (online / offline)
 2. Cancel a booking (online / offline)
 3. Checkin
