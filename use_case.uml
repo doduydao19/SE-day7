@@ -1,0 +1,42 @@
+@startuml
+package User_direct {
+  actor Manager
+  actor Saller
+  actor Receptionist
+}
+
+package User_indirect {
+  actor Client
+
+}
+
+package manner {
+  Manager --> (Room manage)
+  Manager --> (Create report)
+  Seller --> (Book a room)
+  Seller --> (Cancel a booking)
+  Receptionist --> (Book a room)
+  Receptionist --> (Cancel a booking)
+  Receptionist --> (Checkin)
+  Receptionist --> (Checkout)
+  Client --> (Book a room)
+  Client --> (Cancel a booking)
+  Client --> (Checkin)
+  Client --> (Checkout)
+}
+
+package Room {
+  (Room manage) --> (Name)
+  (Room manage) --> (Type)
+  (Room manage) --> (Price)
+  (Room manage) --> (Services)
+  (Room manage) --> (Descript)
+}
+package Basic_information{
+  (Checkin) --> (CMND/Passport)
+  (Checkin) --> (Full name)
+  (Checkin) --> (Address)
+  (Checkin) --> (Phone number)
+  (Checkin) --> (Requirement others)
+}
+@enduml
